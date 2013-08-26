@@ -3,3 +3,5 @@
 .idea/tasks.xml
 */classes
 .DS_Store
+.idea/dictionaries/
+.idea/codeStyleSettings.xml
