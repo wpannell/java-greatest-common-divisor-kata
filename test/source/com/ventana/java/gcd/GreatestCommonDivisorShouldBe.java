@@ -11,7 +11,7 @@ public class GreatestCommonDivisorShouldBe {
   private GreatestCommonDivisorMethod method;
 
   @Before
-  public void instantiateMethodObject() {
+  public void aNewMethodObject() {
     method = new GreatestCommonDivisorMethod();
   }
 
