@@ -36,4 +36,10 @@ public class GreatestCommonDivisorShouldBe {
     assertThat("gcdOf(2, 4)", gcdOf(2, 4), is(equalTo(2)));
     assertThat("gcdOf(4, 2)", gcdOf(4, 2), is(equalTo(2)));
   }
+
+  @Test
+  public void threeWhenFactorsAre3And9() throws Exception {
+    assertThat("gcdOf(3, 9)", gcdOf(3, 9), is(equalTo(3)));
+    assertThat("gcdOf(9, 3)", gcdOf(9, 3), is(equalTo(3)));
+  }
 }
