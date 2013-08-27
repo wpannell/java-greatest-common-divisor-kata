@@ -9,7 +9,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GreatestCommonDivisorShouldBe {
   private int gcdOf(int... factors) {
     if(factors[0] == 1 || factors[1] == 1) return 1;
-    return factors[0];
+    if(factors[0] == factors[1]) return factors[0];
+    return factors[1] % factors[0];
   }
 
   @Test
