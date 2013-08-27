@@ -34,4 +34,9 @@ public class GreatestCommonDivisorShouldBe {
   public void oneWhenFactorsAreAnyOddNumberAnd2() throws Exception {
     assertThat("gcdOf(1771, 2)", gcdOf(1771, 2), is(equalTo(1)));
   }
+
+  @Test
+  public void twoWhenFactorsAre2And4() throws Exception {
+    assertThat("gcdOf(2, 4)", gcdOf(2, 4), is(equalTo(2)));
+  }
 }
