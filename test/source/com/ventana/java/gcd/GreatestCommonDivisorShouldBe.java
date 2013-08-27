@@ -12,7 +12,14 @@ public class GreatestCommonDivisorShouldBe {
   }
 
   @Test
-  public void oneWhenFactorsAre1And1() {
-    assertThat("gcdOf(1, 1)", gcdOf(1, 1), is(equalTo(1)));
+  public void oneWhenAnyFactorIs1() {
+    assertThat("gcdOf(1, 99)", gcdOf(1, 99), is(equalTo(1)));
+    assertThat("gcdOf(199, 1)", gcdOf(199, 1), is(equalTo(1)));
   }
+
+  @Test
+  public void theFactorWhenBothFactorsAreEqual() {
+    assertThat("gcdOf(199, 199)", gcdOf(199, 199), is(equalTo(199)));
+  }
+
 }
