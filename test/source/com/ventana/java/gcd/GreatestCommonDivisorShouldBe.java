@@ -8,7 +8,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GreatestCommonDivisorShouldBe {
   private int gcdOf(int... factors) {
-    return 0;
+    return 1;
   }
 
   @Test
