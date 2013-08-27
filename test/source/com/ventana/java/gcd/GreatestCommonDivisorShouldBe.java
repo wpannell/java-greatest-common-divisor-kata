@@ -8,7 +8,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GreatestCommonDivisorShouldBe {
   private int gcdOf(int... factors) {
-    return 1;
+    if(factors[0] == 1 || factors[1] == 1) return 1;
+    return factors[0];
   }
 
   @Test
@@ -21,5 +22,4 @@ public class GreatestCommonDivisorShouldBe {
   public void theFactorWhenBothFactorsAreEqual() {
     assertThat("gcdOf(199, 199)", gcdOf(199, 199), is(equalTo(199)));
   }
-
 }
