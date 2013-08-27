@@ -42,4 +42,29 @@ public class GreatestCommonDivisorShouldBe {
     assertThat("gcdOf(3, 9)", gcdOf(3, 9), is(equalTo(3)));
     assertThat("gcdOf(9, 3)", gcdOf(9, 3), is(equalTo(3)));
   }
+
+  @Test
+  public void twelveWhenFactorsAre12And144() throws Exception {
+    assertThat("gcdOf(12, 144)", gcdOf(12, 144), is(equalTo(12)));
+    assertThat("gcdOf(144, 12)", gcdOf(144, 12), is(equalTo(12)));
+  }
+
+  @Test
+  public void threeWhenFactorsAre12And147() throws Exception {
+    assertThat("gcdOf(12, 147)", gcdOf(12, 147), is(equalTo(3)));
+    assertThat("gcdOf(147, 12)", gcdOf(147, 12), is(equalTo(3)));
+  }
+
+  @Test
+  public void fourWhenFactorsAre12And148() throws Exception {
+    assertThat("gcdOf(12, 148)", gcdOf(12, 148), is(equalTo(4)));
+    assertThat("gcdOf(148, 12)", gcdOf(148, 12), is(equalTo(4)));
+  }
+
+  @Test
+  public void sixWhenFactorsAre12And150() throws Exception {
+    assertThat("gcdOf(12, 150)", gcdOf(12, 150), is(equalTo(6)));
+    assertThat("gcdOf(150, 12)", gcdOf(150, 12), is(equalTo(6)));
+  }
+
 }
