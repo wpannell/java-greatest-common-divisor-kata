@@ -22,4 +22,9 @@ public class GreatestCommonDivisorShouldBe {
   public void theFactorWhenBothFactorsAreEqual() {
     assertThat("gcdOf(199, 199)", gcdOf(199, 199), is(equalTo(199)));
   }
+
+  @Test
+  public void oneWhenFactorsAre2AndAnyOddNumber() throws Exception {
+    assertThat("gcdOf(2, 101)", gcdOf(2, 101), is(equalTo(1)));
+  }
 }
