@@ -1,7 +1,7 @@
 package com.ventana.java.gcd;
 
 public class GreatestCommonDivisorMethod {
-  public static int gcdOf(int... factors) {
+  public int gcdOf(int... factors) {
     if(factors[0] == 1 || factors[1] == 1) return 1;
     if(factors[0] == factors[1]) return factors[0];
     if(factors[1] % factors[0] == 0) return factors[0];
