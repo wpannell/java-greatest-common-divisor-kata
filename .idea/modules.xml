@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gcd.iml" filepath="$PROJECT_DIR$/gcd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greatest-common-divisor-kata.iml" filepath="$PROJECT_DIR$/greatest-common-divisor-kata.iml" />
     </modules>
   </component>
 </project>
