@@ -7,14 +7,16 @@ public class Main {
           "incorrect number of arguments -- commandline usage (e.g.): gcd 2 4");
       return;
     }
-    int[] factors = new int[2];
+    int dividend = 0;
+    int divisor = 0;
     try {
-      factors[0] = Integer.parseInt(args[0]);
-      factors[1] = Integer.parseInt(args[1]);
+      dividend = Integer.parseInt(args[0]);
+      divisor = Integer.parseInt(args[1]);
     }
     catch (Exception e) {
       System.out.println(args[0] + " or " + args[1] + " not a number");
     }
-    System.out.println(new GreatestCommonDivisorMethod().gcdOf(factors));
+    System.out.println(
+        new GreatestCommonDivisorMethod().gcdOf(dividend, divisor));
   }
 }
